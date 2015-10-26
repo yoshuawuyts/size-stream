@@ -1,6 +1,6 @@
 {
   "name": "size-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Count the size of a stream in bytes",
   "main": "index.js",
   "scripts": {
