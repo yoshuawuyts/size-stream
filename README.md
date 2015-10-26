@@ -25,7 +25,7 @@ http.createServer((req, res) => {
   pump(httpLogger, stdout)
 
   const size = sizeStream()
-  size.on('size', function (size) {
+  size.once('size', function (size) {
     httpLogger.setSize(size)
     res.setHeader('Content-Length', size)
   })

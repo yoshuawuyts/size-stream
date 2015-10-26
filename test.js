@@ -10,7 +10,6 @@ test('should expose a size event', function (t) {
 
   const server = http.createServer(function (req, res) {
     const size = sizeStream()
-    size.on('error', err => console.log(err))
     size.on('size', function (size) {
       t.equal(size, 3, 'size')
     })
