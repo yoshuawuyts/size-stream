@@ -1,0 +1,38 @@
+{
+  "name": "size-stream",
+  "version": "1.0.0",
+  "description": "Count the size of a stream in bytes",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/size-stream",
+  "keywords": [
+    "http",
+    "response",
+    "http-framework",
+    "stream",
+    "streaming",
+    "node",
+    "streams2",
+    "res"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "readable-stream": "^2.0.3"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.5.1",
+    "dependency-check": "^2.5.1",
+    "get-server-port": "^1.0.0",
+    "istanbul": "^0.4.0",
+    "standard": "^5.3.1",
+    "tape": "^4.2.2"
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ]
+}
