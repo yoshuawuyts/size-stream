@@ -15,6 +15,7 @@ $ npm install size-stream
 
 ## Usage
 ```js
+const httpNdjson = require('http-ndjson')
 const sizeStream = require('size-stream')
 const stdout = require('stdout-stream')
 const pump = require('pump')
